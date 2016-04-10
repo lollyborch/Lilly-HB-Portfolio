@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3114382, 2015-10-27T09:36:24-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Epilepsja-Outline by Mikołaj Grabowski
+ * URL: http://www.myfonts.com/fonts/mikolaj-grabowski/epilepsja/outline/
+ * Copyright: Copyright &#x00A9; 2015 by Miko&#x0142;aj Grabowski. All rights reserved.
+ * Licensed pageviews: 20,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3114382
+ * 
+ * © 2015 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2f858e");
+
+  
+@font-face {font-family: 'Epilepsja-Outline';src: url('../fonts/2F858E_0_0.eot');src: url('../fonts/2F858E_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2F858E_0_0.woff2') format('woff2'),url('../fonts/2F858E_0_0.woff') format('woff'),url('../fonts/2F858E_0_0.ttf') format('truetype');}
+ 

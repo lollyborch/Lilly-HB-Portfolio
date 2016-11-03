@@ -113,16 +113,16 @@ app.controller('ExampleController', ['$scope', function($scope) {
       }
       $scope.date = new Date();
       $scope.numberDate = $scope.date.getDate();
-      //$scope.month = $scope.date.getMonth();
-      $scope.month = 11;
+      $scope.month = $scope.date.getMonth();
+      //$scope.month = 11;
       $scope.imageLength  = $scope.images.length;
       $scope.moreImageLength  = $scope.moreImages.length;
       $scope.showClues=function(){
          
           if($scope.month == 11){
              if($scope.numberDate<$scope.imageLength){
-                 //var n = $scope.date.getDate();
-                 var n = 16;
+                 var n = $scope.date.getDate();
+                 //var n = 16;
                   console.log("n " + n);
                   for (i = 1; i <= n; i++) { 
                       console.log("i " + i);
@@ -130,17 +130,10 @@ app.controller('ExampleController', ['$scope', function($scope) {
                     }  
                  
              };
-          };
-          
-      var n = $scope.date.getDate();
-          console.log("n " + n);
-          for (i = 1; i <= n; i++) { 
-              console.log("i " + i);
-              $('#X'+i).attr('src', "img/" + i +".gif");
-            }       
+          };  
           
           
-        if($scope.month == 11){
+        /*if($scope.month == 11){
           if($scope.numberDate<$scope.imageLength){
           $scope.limit=$scope.numberDate;
           }
@@ -150,7 +143,7 @@ app.controller('ExampleController', ['$scope', function($scope) {
         }
         else{
           $scope.limit=0;
-        }
+        }*/
         
       }
       $scope.showClues();

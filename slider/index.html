@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+        <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Lilly HB</title>
+        
+        <meta name="description" content="Lilly HB Portfolio">
+        <meta name="author" content="Lilly Hope Borchardt">
+        
+        
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/MyFontsWebfontsKit.css">  
+        
+        <!-- Favicons -->
+        <link rel="icon" type="image/png" href="../images/favicon.png"/>
+        
+        <!-- Google fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300,300italic' rel='stylesheet' type='text/css'>
+                     
+            <!-- slider from https://github.com/leemark/better-simple-slideshow -->
+            <link rel="stylesheet" href="css/simple-slideshow-styles.css"> 
+            
+        
+</head>
+
+
+<body>
+<div>
+    
+    <!-- New top section -->
+      <header class="container-header">
+          <div class="row">
+		<div class="w3-half">
+
+        <p id="lillyhb">Lilly HB</p>
+                
+		</div>
+        <nav class="w3-half">
+          <ul class="nav-list">
+            <li><a href="index.html">home</a></li>
+            <li><a href="portfolio.html" class="current">portfolio</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+
+          </ul>
+
+        </nav> 
+              </div>
+        </header>
+            
+    
+    <!--portfolio-->    
+    
+    <section class="container-h1 " >    
+  
+        <article class='row'> 
+        	<div >
+	          	<small><a href="portfolio.html">Portfolio</a> > Portfolio Inner<small>
+	        </div>
+	    </article>
+    
+    </section>
+            
+            
+    <section class="container">
+            
+        <div class='row'>
+            <h1>Portfolio Inner</h1>
+       </div>
+       <hr />
+            
+     <div class="row">
+
+        <div class="w3-twothird">
+
+            <div class="bss-slides slider-img" tabindex="2">
+               <figure>
+                  <img src="../images/test-image.png" width="100%" /><figcaption>caption 1 <a href="#">link</a></figcaption> 
+               </figure>
+                <figure>
+                  <img src="../images/test-image.png" width="100%" /><figcaption>caption 2 <a href="#">link</a></figcaption> 
+               </figure>
+               <figure>
+                  <img src="../images/test-image.png" width="100%" /><figcaption>caption 3 <a href="#">link</a></figcaption> 
+               </figure>
+                <figure>
+                  <img src="../images/test-image.png" width="100%" /><figcaption>caption 4 <a href="#">link</a></figcaption> 
+               </figure>
+
+            </div> <!-- // bss-slides -->              
+
+
+         </div>
+
+         <div class="w3-third portfoliotext">
+
+        <h2>Approach</h2>
+        <p>As a graphic designer with many years of experience, I have produced many portfolios - electronic and printed.  When approaching this portfolio, I asked the question: What is the difference between presenting graphic design work and interaction design work?  The answer, I found, was telling the story and presenting the process, not just the end artefacts.</p>
+        <p>I started by assessing my current folio and looking at what worked and what didn’t.</p>
+        <blockquote><!--<p class="qstart">“</p>--><p class="qstart">></p><p>Tell the story and the process, <br />don't just present the end artefacts.</p><!--<p class="qend">”</p>--></blockquote>
+        <h3>What worked</h3>
+        <ul>
+            <li>Grid layout to easily see multiple projects </li>
+            <li>Snapshot of skills and experience</li>
+            <li>Typing text intro</li>
+        </ul>
+
+        <h3>What didn’t</h3>
+        <ul>
+            <li>Projects are dispalyed as lightboxes of final designs without context or process; How will I alter the grid layout of projects to include process information?</li>
+        </ul>
+
+        <h3>Undecided</h3>
+        <ul>
+            <li>Single page site with sticky navigation linked to anchors on the page (research to why this is bad)</li>
+            <li>Bootstrap framework.  I love Bootstrap but am unable to use it in this assignment so need to figure out an alternate way to create grid layout.</li>
+        </ul>
+        </div>
+    </div>
+
+                 
+            </section>
+    
+    
+<!-- // content -->   
+        
+        
+<!-- slider from https://github.com/leemark/better-simple-slideshow -->
+<script src="js/hammer.min.js"></script> <!-- hammer for swipe  -->
+<script src="js/better-simple-slideshow.js"></script>
+
+    <script>
+        var opts = {
+            auto : false,
+            fullScreen : true,
+            swipe : true
+        };
+        makeBSS('.slider-img', opts);
+    </script>
+
+</div>        
+</body>
+</html>

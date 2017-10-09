@@ -22,21 +22,17 @@ dark pink ec175c
 
 50 Grey #FAFAFA
 f7f7f9
-900 Grey #212121 */
+900 Grey #212121 
+
+peach #FF6A54
+
+peachy_light #f69680;
 
 
-/*social icons font import */
-@font-face {
-    font-family: 'si';
-    src: url('../fonts/socicon.eot');
-    src: url('../fonts/socicon.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/socicon.woff') format('woff'),
-         url('../fonts/socicon.ttf') format('truetype'),
-         url('../fonts/socicon.svg#icomoonregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
- 
-}
+eucalyptus #56c4a1
+
+bright eucalptus #31e9ae
+A700#00BFA5*/
 
 
 @media screen{
@@ -45,7 +41,7 @@ f7f7f9
         font-family: 'Merriweather', serif;
         font-size:18px;
         line-height:1.5;
-        background-color: #f2f2f2;
+        background-color: #fafafa;
         font-weight:300;
         color: #212121;
         
@@ -94,17 +90,20 @@ f7f7f9
         font-family: 'Roboto', sans-serif;
         font-weight:300;
         margin:15px 0 15px 0;
-        color: #009688;
+        color: #00BFA5;
         /*color: #004D40; */
     }
     
     h3, h3 a{
         
         font-size: 26px;
-        color: #00695C;
+        color: #f69680;
         /* text-transform: uppercase; */
         margin-bottom: 10px;
         margin-top: 40px;
+    }
+    .margintop-10px{
+        margin-top: 10px;
     }
     h4{
         font-size:18px;
@@ -149,8 +148,8 @@ f7f7f9
     a {
         text-decoration: none;
         /* #B2DFDB - teal  #f69680 peach #ec175c pink hover*/ 
-        border-bottom: 1px solid #B2DFDB;
-        box-shadow: inset 0 -3px 0 #B2DFDB;
+        border-bottom: 1px solid #f69680;
+        box-shadow: inset 0 -3px 0 #f69680;
         -webkit-transition: background  .3s ease-in-out;
         transition: background  .3s ease-in-out;
         -webkit-transition: border-bottom  .3s ease-in-out;
@@ -163,7 +162,7 @@ f7f7f9
     }
     
    a:hover{
-        background-color: #B2DFDB ;
+        background-color: #f69680 ;
         cursor: pointer;   
         }
     
@@ -196,7 +195,7 @@ f7f7f9
     padding: 0 175px; */
     border-radius: 2px;
     margin: 105px 0px 0px 300px;
-        background: #f2f2f2;
+        background: #fafafa;
         z-index: 990;
     position: relative;
         padding: 50px 30px 10px 15px;
@@ -208,7 +207,7 @@ f7f7f9
     .container-portfolio {
         border-radius: 2px;
         margin: 105px 0px 0px 300px;
-        background: #f2f2f2;
+        background: #fafafa;
         z-index: 990;
         position: relative;
         padding: 10px 30px 10px 15px;
@@ -353,7 +352,7 @@ f7f7f9
         font-family: Epilepsja-Outline; 
         font-weight: normal; 
         font-style: normal; 
-        color: #009688;
+        color: #00BFA5;
     }
     
     .pencilline {
@@ -480,7 +479,7 @@ f7f7f9
     .n00b, .wizard {
         font-size: 14px;
         font-family: 'Roboto';
-        color: #009688;
+        color: #00BFA5;
     }
     
 
@@ -508,7 +507,7 @@ f7f7f9
         font-size: 18px;
         font-weight: 300;
         margin-top: 45px;
-        min-width: 400px;
+        /*min-width: 400px;*/
     }
 
     .nav-list li { 
@@ -529,12 +528,12 @@ f7f7f9
     }
 
     .nav-list li a:hover, .nav-list li a.current:hover{
-        color: #00796B;
+        color: #FF6A54;
         background: transparent;
     }
     
     .nav-list li:hover a:before, .nav-list li:hover a.current:before{
-        background: #009688;
+        background: #FF6A54;
         position: absolute;
         content: "";
         height: 2px;
@@ -566,7 +565,7 @@ f7f7f9
         border-radius: 2px;
     }
     .nav-list li a.current {
-        color: #009688;
+        color: #00BFA5;
         transition: color .3s ease-in-out;
         -moz-transition: color .3s ease-in-out;
         -webkit-transition: color .3s ease-in-out;
@@ -613,7 +612,7 @@ f7f7f9
         }
 
     .tabs a.active {
-        background-color: #009688;
+        background-color: #00BFA5;
         color: #fff;
 
     }
@@ -629,7 +628,7 @@ f7f7f9
     
     .toptext {
         margin: 34px 0 25px 0px;
-        color: #009688;
+        color: #00BFA5;
         font-size: 35px;
         transform: none;
     }
@@ -651,6 +650,14 @@ f7f7f9
         color: #ec175c;
     }
     
+    .peachy {
+        color: #FF6A54;
+    }
+    
+    .peachy_light {
+        color: #f69680;
+    }
+    
     .plugins li {
         margin-bottom: 10px;
     }
@@ -664,7 +671,7 @@ f7f7f9
     font-family: Epilepsja-Outline;
     font-weight: normal;
     font-style: normal;
-    color: #009688;
+    color: #00BFA5;
     margin: -25px 0 0 -50px;
     padding: 0;
     position: absolute;
@@ -678,7 +685,7 @@ f7f7f9
     font-family: Epilepsja-Outline;
     font-weight: normal;
     font-style: normal;
-    color: #009688;
+    color: #00BFA5;
     margin: -20px 0 0 -25px;
     padding: 0;
     position: absolute;
@@ -692,7 +699,7 @@ f7f7f9
          font-family: Epilepsja-Outline; 
         font-weight: normal; 
         font-style: normal; 
-        color: #009688;
+        color: #00BFA5;
         margin: -130px -45px 0 0;
         padding: 0;
          opacity: 0.2;
@@ -704,7 +711,7 @@ f7f7f9
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         padding: 0 25px;
-        color: #009688;
+        color: #00BFA5;
     }
     
     .w3-half blockquote p{
@@ -713,20 +720,22 @@ f7f7f9
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         padding: 0 25px;
-        color: #009688;
+        color: #00BFA5;
     }
     
     
     .overlay {
         opacity: 0;
-        background: #009688;
+        background: #00BFA5;
         position: absolute;
         -moz-transition: all 0.5s ease-in-out;
         -o-transition: all 0.5s ease-in-out;
         -webkit-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
-        /*background: rgba(0, 150, 136, 0.8); */
-        background: rgba(0, 191, 165, 0.9);
+        /*background: rgba(0, 150, 136, 0.8); 
+        background: rgba(0, 191, 165, 0.9);*/
+        background: rgba(86, 196, 161, 0.9);
+        
         top: 0;
         left: 0;
         width: 100%;
@@ -793,7 +802,15 @@ f7f7f9
     .soc{
         padding: 0px;
         margin-top: 30px;
+        overflow:hidden;
+        list-style:none;
 
+    }
+    
+    .soc li {
+        display:inline-block;
+        *display:inline;
+        zoom:1;
     }
 
     .soc li a {
@@ -832,36 +849,12 @@ f7f7f9
 
     .soc li a:hover {
         color: #fafafa;
-        background-color: #ec175c;
+        background-color: #FF6A54;
         border-bottom: none;
         box-shadow: none;
     }
 
-    .soc-icon-last{
-        margin:0 !important;
-    }
 
-    .soc-linkedin:before {
-        content:'j';
-    }
-    .soc-twitter:before {
-        content:'a';
-    }
-    .soc-github:before {
-        content:'Q';
-    }
-    .soc-google:before {
-        content:'c';
-    }
-    .soc-pinterest:before {
-        content:'d';
-    }
-    .soc-instagram:before {
-        content:'x';
-    }
-    .soc-tumblr:before {
-        content:'z';
-    }
 
     /* graph styles from http://codepen.io/thomasjwicker/pen/vHyui*/
 
@@ -1664,7 +1657,7 @@ optgroup{font-weight:bold}
 }
 
 .displayproject {
-    background: #f2f2f2;
+    background: #fafafa;
     border-radius: 2px;
     margin: 92px 35px 0px 325px;
     /* background: #f2f2f2; */

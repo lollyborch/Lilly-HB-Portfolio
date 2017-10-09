@@ -1,238 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-        <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <title>Lilly HB</title>
-        
-        <meta name="description" content="Lilly HB Portfolio">
-        <meta name="author" content="Lilly Hope Borchardt">
-        
-        
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/MyFontsWebfontsKit.css">  
-        <link rel="stylesheet" href="css/lightbox.css" />
-        
-        <!-- Favicons -->
-        <link rel="icon" type="image/png" href="images/favicon.png"/>
-        
-        <!-- Google fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto:300,300italic' rel='stylesheet' type='text/css'>
-            
-            <!-- slider from https://github.com/leemark/better-simple-slideshow -->
-            <link rel="stylesheet" href="slider/css/simple-slideshow-styles.css"> 
-            
-            <!--Angular
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lilly HB</title>
+    <meta name="description" content="Lilly HB Portfolio">
+    <meta name="author" content="Lilly Hope Borchardt">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/MyFontsWebfontsKit.css">
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,300italic' rel='stylesheet' type='text/css'>
+    <!-- slider from https://github.com/leemark/better-simple-slideshow -->
+    <link rel="stylesheet" href="slider/css/simple-slideshow-styles.css">
+    <!--Angular
             <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
     	    <script src="js/hello.js"></script>-->
-            
-            
-            <!--magnific popup lightbox -->
-            <link rel="stylesheet" href="css/magnific-popup.css"> 
-            <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <!--magnific popup lightbox -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+</head>
 
-            <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
-
-             <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-             
-            
-        
-    </head>
-    
 <body ng-app="myApp">
-<div>
-    
-    <!-- New top section -->
-      <header class="container-header">
-          <div class="row">
-		<div class="w3-half nopadding">
-
-        <p id="lillyhb">Lilly HB</p>
-                
-		</div>
-        <nav class="w3-half nopadding">
-          <ul class="nav-list">
-            <li><a href="index.html">home</a></li>
-            <li><a href="portfolio.html" class="current">portfolio</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="contact.html">contact</a></li>
-
-          </ul>
-
-        </nav> 
-              </div>
-        </header>
-
-<!--portfolio-->    
-    
-    <section class="container-h1 " >  
-           <div class='row'>
-                   <h1>Portfolio</h1>
-           </div>
-           
-         </section>
-        <section class="container">
-            
-            
-            
-          
-            
-            
-            
-        <!-- START TEST DATA -->
-        <div class="row">
-            <h2>Interaction Design</h2>
-            
-           
-            </div>
-             <!--<div class="row">
-                 
-                 
-                <div class="w3-third portfolio">
-
-                            <div id="12345" class="overlay">
-                                <h3 class="portfolioh3"><a href="folio/3-Stratplan-1.jpg" data-lightbox="pub1a" data-title="UQ Library Strategic Plan">UQ Library Strategic Plan</a></h3><a href="https://www.library.uq.edu.au/_/filething/files/get//about/StrategicPlan_13%202.pdf">View PDF</a>
-                                <a href="folio/3-Stratplan-2.jpg" data-lightbox="pub1a" data-title="UQ Library Strategic Plan" class="hidden"></a>
-                                <a href="folio/3-Stratplan-3.jpg" data-lightbox="pub1a" data-title="UQ Library Strategic Plan" class="hidden"> </a>
-                                <a href="" data-lightbox="pub1a" data-title="" class="hidden"> </a>
-                            </div>
-                            <img class="full-width-crop-200 img-responsive portfolioimage" src="images/MID-web-teal.png"/>
+    <div>
+        <!-- New top section -->
+        <header class="container-header">
+            <div class="row">
+                <div class="w3-half nopadding">
+                    <p id="lillyhb">Lilly HB</p>
                 </div>
-            </div>-->
-            
-        <!-- Angular Content Container populated by WebsiteController.js -->    
-            
-        <div ng-controller="WebsiteController">
-            
-            <!-- Content for ixd projects -->
-            <div class="row">
-            <div class="w3-third portfolio" ng-repeat="ixd in projectIxd">
-
-                    <div class="overlay">
-                        <h3 class="portfolioh3"><a ng-href="{{ ixd.url }}">{{ ixd.title }}</a></h3>
-                        <p>{{ ixd.subtitle }}</p>
-                    </div>
-                    <img class="full-width-crop-200 img-responsive portfolioimage" ng-src="{{ ixd.imgthumb }}" alt="" />
+                <nav class="w3-half nopadding">
+                    <ul class="nav-list">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="portfolio.html" class="current">portfolio</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </nav>
             </div>
+        </header>
+        <!--portfolio-->
+        <section class="container-h1 ">
+            <div class='row'>
+                <h1>Portfolio</h1> </div>
+        </section>
+        <section class="container">
+            <!-- Angular Content Container populated by WebsiteController.js -->
+            <div ng-controller="WebsiteController">
+                <div class="row">
+                    <h2>UX Design</h2>
+                <!-- Content for ixd projects -->
+          
+                    <div ng-repeat="ixd in projectIxd">
+                        <div class="overlay">
+                            <h3 class="portfolioh3"><a ng-href="{{ ixd.url }}">{{ ixd.title }}</a></h3>
+                            <!--<p>{{ ixd.subtitle }}</p>-->
+                        </div> <img class="full-width-crop-200 img-responsive portfolioimage" ng-src="{{ ixd.imgthumb }}" alt="" /> </div>
+                </div>
+                <div class="row">
+                    <h2>Masters Projects</h2>
+                <!-- Content for ixd projects -->
+          
+                    <div class="w3-third portfolio" ng-repeat="ixd in projectIxd">
+                        <div class="overlay">
+                            <h3 class="portfolioh3"><a ng-href="{{ ixd.url }}">{{ ixd.title }}</a></h3>
+                            <!--<p>{{ ixd.subtitle }}</p>-->
+                        </div> <img class="full-width-crop-200 img-responsive portfolioimage" ng-src="{{ ixd.imgthumb }}" alt="" /> </div>
+                </div>
+                <div class="row">
+                    <!-- contents for corporate publications -->
+                    <h2>Corporate publications</h2>
+                    <div class="w3-third portfolio" ng-repeat="project in projectPublications">
+                        <div class="overlay">
+                            <h3 class="portfolioh3"><a ng-href="{{ project.img1 }}" data-lightbox="{{ project.datalb }}" data-title="{{ project.datatitle }}">{{ project.title }}</a></h3>
+                            <p class="{{ project.class }}">View <a class="boxa" ng-href="{{ project.img1 }}" data-lightbox="{{ project.datalb }}" data-title="{{ project.datatitle }}">{{ project.subtitle1 }}</a> or <a class="boxa" ng-href="{{ project.suburl }}" target="_blank">{{ project.subtitle }}</a></p>
+                            <a ng-href="{{ project.img2 }}" data-lightbox="{{ project.datalb }}" data-title="{{ project.datatitle }}" class="hidden"></a>
+                            <a ng-href="{{ project.img3 }}" data-lightbox="{{ project.datalb }}" data-title="{{ project.datatitle }}" class="hidden"></a>
+                            <a ng-href="{{ project.img4 }}" data-lightbox="{{ project.datalb }}" data-title="{{ project.datatitle }}" class="hidden"></a>
+                        </div> <img class="full-width-crop-200 img-responsive portfolioimage" ng-src="{{ project.imgthumb }}" alt="" /> </div>
+                </div>
             </div>
-            
-             <div class="row">
-            <!-- contents for corporate publications -->
-                 
-                 <h2>Corporate Publications</h2>
-            
-            <div class="w3-third portfolio" ng-repeat="project in projectPublications">
-
-            <div class="overlay">
-                <h3 class="portfolioh3"><a ng-href="{{ project.img1 }}" data-lightbox="{{ project.datalb }}" data-title="{{ project.datatitle }}">{{ project.title }}</a></h3>
-                    <p class="{{ project.class }}">View <a class="boxa" ng-href="{{ project.img1 }}" data-lightbox="{{ project.datalb }}" data-title="{{ project.datatitle }}">{{ project.subtitle1 }}</a> or 
-                    <a class="boxa" ng-href="{{ project.suburl }}" target="_blank">{{ project.subtitle }}</a></p>
-                <a ng-href="{{ project.img2 }}" data-lightbox="{{ project.datalb }}" data-title="{{ project.datatitle }}" class="hidden"></a>
-                <a ng-href="{{ project.img3 }}" data-lightbox="{{ project.datalb }}" data-title="{{ project.datatitle }}" class="hidden"></a>
-                <a ng-href="{{ project.img4 }}" data-lightbox="{{ project.datalb }}" data-title="{{ project.datatitle }}" class="hidden"></a>
-                
-            </div>
-            <img class="full-width-crop-200 img-responsive portfolioimage" ng-src="{{ project.imgthumb }}" alt="" />
-            </div>
-            </div>
-            
-            <div class="row">
-            <!-- contents for postcards invites -->
-                 
-            <h2>Invitations, postcards, &amp; bookmarks</h2>
-            
-            <div class="w3-third portfolio" ng-repeat="card in projectPostcards">
-
-            <div class="overlay">
-                <h3 class="portfolioh3"><a ng-href="{{ card.img1 }}" data-lightbox="{{ card.datalb }}" data-title="{{ card.datatitle }}">{{ card.title }}</a></h3>
-                   
-                <a ng-href="{{ card.img2 }}" data-lightbox="{{ card.datalb }}" data-title="{{ card.datatitle }}" class="hidden"></a>
-                <a ng-href="{{ card.img3 }}" data-lightbox="{{ card.datalb }}" data-title="{{ card.datatitle }}" class="hidden"></a>
-                <a ng-href="{{ card.img4 }}" data-lightbox="{{ card.datalb }}" data-title="{{ card.datatitle }}" class="hidden"></a>
-                
-            </div>
-            <img class="full-width-crop-200 img-responsive portfolioimage" ng-src="{{ card.imgthumb }}" alt="" />
-            </div>
-            </div>
-            
-            <div class="row">
-            <!-- contents for postcards invites -->
-                 
-            <h2>Image creation &amp; manipulation</h2>
-            
-            <div class="w3-third portfolio" ng-repeat="image in projectIllustration">
-
-            <div class="overlay">
-                <h3 class="portfolioh3"><a ng-href="{{ image.img1 }}" data-lightbox="{{ image.datalb }}" data-title="{{ image.datatitle }}">{{ image.title }}</a></h3>
-              
-                <a ng-href="{{ image.img2 }}" data-lightbox="{{ image.datalb }}" data-title="{{ image.datatitle }}" class="hidden"></a>
-                <a ng-href="{{ image.img3 }}" data-lightbox="{{ image.datalb }}" data-title="{{ image.datatitle }}" class="hidden"></a>
-                <a ng-href="{{ image.img4 }}" data-lightbox="{{ image.datalb }}" data-title="{{ image.datatitle }}" class="hidden"></a>
-                
-            </div>
-            <img class="full-width-crop-200 img-responsive portfolioimage" ng-src="{{ image.imgthumb }}" alt=""/>
-            </div>
-            </div>
-            
-        </div>
-            
-            <!-- End Angular Content Container -->      
-            
-	    
-    </section>
-                
-               
-<!-- script 
+            <!-- End Angular Content Container -->
+        </section>
+        <!-- script 
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>-->
-  <!--  <script src="js/jquery-2.1.4.js"></script>-->
-    <script type="text/javascript" src="js/lightbox.min.js"></script>
-     
-    <script src="slider/js/hammer.min.js"></script> <!-- hammer for swipe  -->
-<script src="slider/js/better-simple-slideshow.js"></script>
-
-    <script>
-        var opts = {
-            auto : false,
-            fullScreen : true,
-            swipe : true
-        };
-        makeBSS('.slider-img', opts);
-    </script>
-    
-   
-    
-    
-    
-    <!-- Angular JS -->
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
-    <!-- Angular Controller-->
-    <script src="js/WebsiteController.js"></script> 
-    
-     <!-- Remove empty lightbox images 
+        <!--  <script src="js/jquery-2.1.4.js"></script>-->
+        <script type="text/javascript" src="js/lightbox.min.js"></script>
+        <script src="slider/js/hammer.min.js"></script>
+        <!-- hammer for swipe  -->
+        <script src="slider/js/better-simple-slideshow.js"></script>
+        <script>
+            var opts = {
+                auto: false
+                , fullScreen: true
+                , swipe: true
+            };
+            makeBSS('.slider-img', opts);
+        </script>
+        <!-- Angular JS -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+        <!-- Angular Controller-->
+        <script src="js/WebsiteController.js"></script>
+        <!-- Remove empty lightbox images 
     <script>
         function remove_empty() {
             $('a[ng-href=""]').remove();
             console.log('success!');
         }
     </script>-->
-    <script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	  ga('create', 'UA-55936669-1', 'auto');
-	  ga('send', 'pageview');
-	</script>
-    
-    
-    
-    
-   
-
-</div>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-55936669-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </div>
 </body>
+
 </html>

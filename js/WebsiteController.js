@@ -34,8 +34,49 @@ app.controller('WebsiteController', ['$scope', function ($scope) {
             imgthumb: 'folio/1-culturalHistorical-1.jpg',
             class: 'noshow'
         },
+         {
+            title: 'UQ Library postcards',
+            img1: 'folio/2-1comp.jpg',
+            img2: 'folio/2-1Students.jpg',
+            img3: 'folio/2-1StaffAlumni.jpg',
+            img4: 'folio/2-1Law.jpg',
+            datalb: 'pub6',
+            datatitle: 'UQ Library postcards',
+            imgthumb: 'folio/2-1overview-thumb.jpg',
+             class: 'noshow'
+        },
         {
-            title: 'UQ Library technology strategy',
+            title: 'Fryer Lecture in Australian Literature',
+            img1: 'folio/2-5FryerLecture-1b.jpg',
+            img2: 'folio/2-5FryerLecture-2b.jpg',
+            img3: 'folio/2-5FryerLecture-3b.jpg',
+            img4: 'folio/2-5FryerLecture-spotlight-web.jpg',
+            datalb: 'pub10',
+            datatitle: 'Fryer Lecture in Australian Literature',
+            imgthumb: 'folio/2-5FryerLecture-thumb.jpg',
+            class: 'noshow'
+        },
+        {
+            title: 'JD Fryer: Student and Soldier',
+            img1: 'folio/2-4JDFryer-invite1.jpg',
+            img2: 'folio/2-4JDFryer-invite2.jpg',
+            img3: 'folio/2-4JDFryer-invite3.jpg',
+            img4: 'folio/2-4JDFryer-PC.jpg',
+            datalb: 'pub9',
+            datatitle: 'JD Fryer: Student and Soldier online exhibition launch',
+            imgthumb: 'folio/2-4JDFryer-thumb.jpg',
+            class: 'noshow'
+        },
+        {
+            title: 'Fryer Library postcard',
+            img1: 'folio/2-3Fryer.jpg',
+            datalb: 'pub8',
+            datatitle: 'Fryer Library postcard',
+            imgthumb: 'folio/2-3Fryer-thumb.jpg',
+            class: 'noshow'
+        },
+        {
+            title: 'UQ Library Technology Strategy',
             subtitle: 'PDF',
             subtitle1: 'snapshot',
             suburl: 'pdf/TechnologyStrategy_14.pdf',
@@ -85,79 +126,15 @@ app.controller('WebsiteController', ['$scope', function ($scope) {
             imgthumb: 'folio/1-YaaG-2012-1.jpg'
         }
     ];
-    
-    $scope.projectPostcards = [
+
+    /*$scope.projectIllustration = [
         {
-            title: 'UQ Library postcards',
-            img1: 'folio/2-1comp.jpg',
-            img2: 'folio/2-1Students.jpg',
-            img3: 'folio/2-1StaffAlumni.jpg',
-            img4: 'folio/2-1Law.jpg',
-            datalb: 'pub6',
-            datatitle: 'UQ Library postcards',
-            imgthumb: 'folio/2-1overview-thumb.jpg'
-        },
-        {
-            title: 'Fryer Lecture in Australian Literature',
-            img1: 'folio/2-5FryerLecture-1b.jpg',
-            img2: 'folio/2-5FryerLecture-2b.jpg',
-            img3: 'folio/2-5FryerLecture-3b.jpg',
-            img4: 'folio/2-5FryerLecture-spotlight-web.jpg',
-            datalb: 'pub10',
-            datatitle: 'Fryer Lecture in Australian Literature',
-            imgthumb: 'folio/2-5FryerLecture-thumb.jpg'
-        },
-        {
-            title: 'JD Fryer: Student and Soldier',
-            img1: 'folio/2-4JDFryer-invite1.jpg',
-            img2: 'folio/2-4JDFryer-invite2.jpg',
-            img3: 'folio/2-4JDFryer-invite3.jpg',
-            img4: 'folio/2-4JDFryer-PC.jpg',
-            datalb: 'pub9',
-            datatitle: 'JD Fryer: Student and Soldier online exhibition launch',
-            imgthumb: 'folio/2-4JDFryer-thumb.jpg'
-        },
-        {
-            title: 'Fryer Library postcard',
-            img1: 'folio/2-3Fryer.jpg',
-            datalb: 'pub8',
-            datatitle: 'Fryer Library postcard',
-            imgthumb: 'folio/2-3Fryer-thumb.jpg'
-        },
-        {
-            title: 'Friends of the UQ Library',
-            img1: 'folio/2-2Friends.jpg',
-            img2: 'folio/2-2Friends-brand.jpg',
-            datalb: 'pub7',
-            datatitle: 'Friends of the UQ Library',
-            imgthumb: 'folio/2-2Friends-thumb.jpg'
-        },
-        {
-            title: 'WWI ANZACS exhibition bookmark',
-            img1: 'folio/2-7Bookmark-WWI-thumb',
-            datalb: 'pub12',
-            datatitle: 'WWI ANZACS exhibition bookmark',
-            imgthumb: 'folio/2-7Bookmark-WWI-thumb.jpg'
-        },
-        {
-            title: 'Brisbane Writers Festival at UQ: 2014 & 2015',
-            img1: 'folio/2-6BWF-2013-slide.jpg',
-            img2: 'folio/2-6BWF-2013-invite.jpg',
-            img3: 'folio/2-6BWF-2015-slide.jpg',
-            img4: 'folio/2-6BWF-2015-web.jpg',
-            datalb: 'pub11',
-            datatitle: 'Brisbane Writers Festival at UQ: 2014 & 2015',
-            imgthumb: 'folio/2-6BWF-thumb.jpg'
-        },
-    ];
-    $scope.projectIllustration = [
-        {
-            title: 'Food & drink policy',
-            img1: 'folio/3-Illus-FD-1.jpg',
-            img2: 'folio/3-Illus-FD-2.jpg',
+            title: 'Photo manipulation',
+            img1: 'folio/3-Ps-madskills-1.jpg',
+            img2: 'folio/3-Ps-madskills-2.jpg',
             datalb: 'pub13',
-            datatitle: 'Food & drink policy illustration',
-            imgthumb: 'folio/3-Illus-FD-1.jpg'
+            datatitle: 'Photo manipulation',
+            imgthumb: 'folio/3-Ps-madskills-thumb.jpg'
         },
         {
             title: 'Letter Writers Alliance invitation',
@@ -168,7 +145,7 @@ app.controller('WebsiteController', ['$scope', function ($scope) {
             datatitle: 'Letter Writers Alliance typewriter illustration',
             imgthumb: 'folio/3-Illus-LWS-2.jpg'
         }
-    ];
+    ];*/
   
 }]);
 

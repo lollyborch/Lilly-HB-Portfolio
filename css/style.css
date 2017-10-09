@@ -428,6 +428,10 @@ A700#00BFA5*/
     border-radius: 2px;
 }
     
+    .portfolio_fullwidth .full-width-crop-200 {
+    height: 375px;
+}
+    
     .portfolio-image {
     margin-top: 10px;
     -o-object-fit: cover;
@@ -750,10 +754,10 @@ A700#00BFA5*/
         background-color: #fff;
     }
     
-    .portfolio:hover .overlay {
+    .portfolio:hover .overlay, .portfolio_fullwidth:hover .overlay {
         opacity: 1;
     }
-    .portfolio {
+    .portfolio, .portfolio_fullwidth {
         position: relative;
         display: inline-block;
         margin: 10px 3% 3% 0;
@@ -1105,6 +1109,10 @@ small{
     
     .portfolio {
     width: 47% !important;
+    }
+    
+    .portfolio_fullwidth {
+        width: 95% !important;
     }
     
     .portfolioh3 a, .portfolio-hover-text:hover a {

@@ -58,10 +58,11 @@
                     <h2>UX Design</h2>
                 <!-- Content for ixd projects -->
           
-                    <div class="portfolio_fullwidth">
+                    <div>
                         <div class="overlay">
-                            <h3 class="portfolioh3"><a href="pluss.html">Pluss &amp; Mesher apps</a></h3>
-                        </div> <img class="full-width-crop-200 img-responsive portfolioimage" src="pluss/Pluss-thumb.png" alt="" /> </div>
+                            <h3 class="portfolioh3"><a ng-href="{{ ixd.url }}">{{ ixd.title }}</a></h3>
+                            <!--<p>{{ ixd.subtitle }}</p>-->
+                        </div> <img class="full-width-crop-200 img-responsive portfolioimage" ng-src="{{ ixd.imgthumb }}" alt="" /> </div>
                 </div>
                 <div class="row">
                     <h2>Masters Projects</h2>

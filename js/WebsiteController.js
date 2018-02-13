@@ -2,7 +2,28 @@
 var app = angular.module("myApp", []);
 
 app.controller('WebsiteController', ['$scope', function ($scope) {
-  $scope.projectIxd = [
+  $scope.plusss = [
+        {
+            title: 'Pluss & Mesher',
+            subtitle: 'Lead UX Designer for Pluss and Mesher apps',
+            subtitle1: 'View screens',
+            imgthumb: 'pluss/Pluss-thumb.png',
+            url: 'pluss.html',
+            datalb: 'pluss1',
+            datatitle: 'Pluss & Mesher app design',
+            img1: 'pluss/Pluss_1.png',
+            img2: 'pluss/Pluss_2.png',
+            img3: 'pluss/Pluss_3.png',
+            img4: 'pluss/Pluss_4.png',
+            img5: 'pluss/Pluss_5.png',
+            img6: 'pluss/Pluss_6.png',
+            img7: 'pluss/Pluss_8_8.png',
+            img8: 'pluss/Pluss_7_8.png' 
+            
+        }
+    ];
+    
+    $scope.projectIxd = [
         {
             title: 'Web Historians',
             subtitle: 'Masters project',

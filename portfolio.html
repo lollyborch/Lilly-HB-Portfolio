@@ -58,10 +58,28 @@
                     <h2>UX Design</h2>
                 <!-- Content for ixd projects -->
           
-                    <div class="portfolio_fullwidth">
+                    <div class="portfolio_fullwidth" ng-repeat="pluss in plusss">
                         <div class="overlay">
-                            <h3 class="portfolioh3"><a href="pluss.html">Pluss &amp; Mesher apps</a></h3>
-                        </div> <img class="full-width-crop-200 img-responsive portfolioimage" src="pluss/Pluss-thumb.png" alt="" /> </div>
+                            
+                            <h3 class="portfolioh3">
+                                {{ pluss.title }}
+                            </h3>     
+                            <p class="{{ pluss.class }}">
+                                {{ pluss.subtitle }}
+                            </p>
+                            <p class="{{ pluss.class }}"> 
+                                <a class="boxa" ng-href="{{ pluss.img1 }}" data-lightbox="{{ pluss.datalb }}" data-title="{{ pluss.datatitle }}">{{ pluss.subtitle1 }}</a>
+                            </p>
+                            <a ng-href="{{ pluss.img2 }}" data-lightbox="{{ pluss.datalb }}" data-title="{{ pluss.datatitle }}" class="hidden"></a>
+                            <!--<a ng-href="{{ pluss.img3 }}" data-lightbox="{{ pluss.datalb }}" data-title="{{ pluss.datatitle }}" class="hidden"></a>-->
+                            <a ng-href="{{ pluss.img4 }}" data-lightbox="{{ pluss.datalb }}" data-title="{{ pluss.datatitle }}" class="hidden"></a>
+                            <a ng-href="{{ pluss.img5 }}" data-lightbox="{{ pluss.datalb }}" data-title="{{ pluss.datatitle }}" class="hidden"></a>
+                            <!--<a ng-href="{{ pluss.img6 }}" data-lightbox="{{ pluss.datalb }}" data-title="{{ pluss.datatitle }}" class="hidden"></a>-->
+                            <a ng-href="{{ pluss.img7 }}" data-lightbox="{{ pluss.datalb }}" data-title="{{ pluss.datatitle }}" class="hidden"></a>
+                            <a ng-href="{{ pluss.img8 }}" data-lightbox="{{ pluss.datalb }}" data-title="{{ pluss.datatitle }}" class="hidden"></a>
+
+                            
+                        </div> <img class="full-width-crop-200 img-responsive portfolioimage" ng-src="{{ pluss.imgthumb }}" alt="" /> </div>
                 </div>
                 <div class="row">
                     <h2>Masters Projects</h2>
@@ -78,8 +96,13 @@
                     <h2>Corporate publications</h2>
                     <div class="w3-third portfolio" ng-repeat="project in projectPublications">
                         <div class="overlay">
-                            <h3 class="portfolioh3"><a ng-href="{{ project.img1 }}" data-lightbox="{{ project.datalb }}" data-title="{{ project.datatitle }}">{{ project.title }}</a></h3>
-                            <p class="{{ project.class }}">View <a class="boxa" ng-href="{{ project.img1 }}" data-lightbox="{{ project.datalb }}" data-title="{{ project.datatitle }}">{{ project.subtitle1 }}</a> or <a class="boxa" ng-href="{{ project.suburl }}" target="_blank">{{ project.subtitle }}</a></p>
+                            <h3 class="portfolioh3">
+                                <a ng-href="{{ project.img1 }}" data-lightbox="{{ project.datalb }}" data-title="{{ project.datatitle }}">{{ project.title }}</a>
+                            </h3>
+                            <p class="{{ project.class }}">View 
+                                <a class="boxa" ng-href="{{ project.img1 }}" data-lightbox="{{ project.datalb }}" data-title="{{ project.datatitle }}">{{ project.subtitle1 }}</a> or 
+                                <a class="boxa" ng-href="{{ project.suburl }}" target="_blank">{{ project.subtitle }}</a>
+                            </p>
                             <a ng-href="{{ project.img2 }}" data-lightbox="{{ project.datalb }}" data-title="{{ project.datatitle }}" class="hidden"></a>
                             <a ng-href="{{ project.img3 }}" data-lightbox="{{ project.datalb }}" data-title="{{ project.datatitle }}" class="hidden"></a>
                             <a ng-href="{{ project.img4 }}" data-lightbox="{{ project.datalb }}" data-title="{{ project.datatitle }}" class="hidden"></a>

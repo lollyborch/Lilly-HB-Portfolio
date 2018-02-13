@@ -748,6 +748,10 @@ A700#00BFA5*/
         padding: 5px 20px 20px 35px;
     }
     
+    .overlay h3 {
+        color: #fff;
+    }
+    
     .portfolioimage {
         margin-right: 20px;
         box-shadow: 0 0 0 1px rgba(0,0,0,.1),2px 2px 4px rgba(0,0,0,.1);
@@ -757,13 +761,22 @@ A700#00BFA5*/
     .portfolio:hover .overlay, .portfolio_fullwidth:hover .overlay {
         opacity: 1;
     }
-    .portfolio, .portfolio_fullwidth {
+    .portfolio {
         position: relative;
         display: inline-block;
         margin: 10px 3% 3% 0;
         vertical-align: top;
         padding: 0 !important;
         width:30% !important;
+    }
+    
+    .portfolio_fullwidth {
+        position: relative;
+        display: inline-block;
+        margin: 10px 3% 3% 0;
+        vertical-align: top;
+        padding: 0 !important;
+        width:100% !important;
     }
     
     .portfolioh3 a, .portfolio-hover-text:hover a {
